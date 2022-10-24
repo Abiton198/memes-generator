@@ -80,13 +80,14 @@ export default function Meme() {
 
  use the useEffect to fetch data outside the boundaries of React
 [] = dependencies/ no dependencies needed
-/7/making the text appear and linked to the image
-/26/the state that stores data fetched from API
-/34/the new state after the change/ when a button is clicked
-/28/get a random number
+//making the text appear and linked to the image
+//the state that stores data fetched from API
+//the new state after the change/ when a button is clicked
+//get a random number
 
-
-    /13/ useEffect takes a function as its parameter. If that function
+*/
+ /**
+    useEffect takes a function as its parameter. If that function
     returns something, it needs to be a cleanup function. Otherwise,
     it should return nothing. If we make it an async function, it
     automatically retuns a promise instead of a function or nothing.
