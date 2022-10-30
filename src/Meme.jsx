@@ -10,13 +10,16 @@ export default function Meme() {
     //using async func inside a useEffect func
     const [allMemes, setAllMemes] = useState([]) 
     useEffect(()=>{
-        async function getMemes(){
-            const res = await fetch("https://api.imgflip.com/get_memes")
-            const data = await res.json()
-            setAllMemes(data.data.memes)
-        }
         getMemes()
     },[])
+
+   const getMemes = async = () {
+    const api = "https://api.imgflip.com/get_memes"
+        const response = await fetch(api)
+        const json = await response.json()
+        setAllMemes(json.data.memes)
+    }
+    // getMemes()
 
 
     //this func is to get the image display 
